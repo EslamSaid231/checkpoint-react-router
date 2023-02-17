@@ -1,0 +1,108 @@
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5)
+  );
+  z-index: 999;
+  height: 15vh;
+}
+.linksContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.linksContainer .logo {
+  width: 250px;
+}
+.linksContainer .links a {
+  padding: 5vh 1vw;
+  text-decoration: none;
+  color: white;
+}
+.usercontrols {
+  display: flex;
+  margin-right: 1vw;
+}
+.usercontrols i {
+  margin-left: 0.5vw;
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+}
+.linksMobileOnly {
+  display: hidden;
+}
+.userpanelHide {
+  display: none;
+}
+.userpanelShow {
+  position: absolute;
+  display: block;
+  background-color: red;
+  height: 15vh;
+  width: 18vw;
+  right: 5vw;
+  top: 11vh;
+  border-radius: 15px;
+  text-align: center;
+}
+.userpanelShow a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin: 9px;
+  padding: 13px 10px;
+  border-bottom: 1px;
+  align-items: center;
+}
+.MobileLinks a {
+  text-decoration: none;
+  color: white;
+
+  padding: 5vh 1vw;
+  text-decoration: none;
+  color: white;
+}
+.Mobile {
+  display: none;
+}
+@media only screen and (max-width: 880px) {
+  .links {
+    display: none;
+  }
+  .usercontrols i {
+    display: none;
+  }
+  .usercontrols .Mobile {
+    display: inline;
+  }
+  .MobileLinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 50vw;
+    align-items: flex-start;
+    border-radius: 5px;
+  }
+  .MobileLinks a {
+    text-decoration: none;
+    color: white;
+    padding: 40px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+  }
+}

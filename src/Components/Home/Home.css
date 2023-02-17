@@ -1,0 +1,158 @@
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.homeContainer {
+  position: relative;
+}
+.coverImage {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+.coverImage img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.coverImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 88;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.content {
+  padding: 100px;
+  height: 100vh;
+}
+.MovieTitle {
+  width: 80vw;
+}
+.description {
+  width: 60vw;
+}
+
+.control-btn button {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+.control-btn .next {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  z-index: 99;
+}
+.control-btn .prev {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  z-index: 99;
+}
+.details h1 {
+  font-size: 130px;
+  font-weight: 800;
+  background-image: url(../../../public/texure.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rating i {
+  color: #e50813;
+  margin-right: 10px;
+}
+.details label {
+  color: #e50813;
+}
+.details span {
+  color: #fff;
+}
+
+.cast h4 {
+  color: #e50813;
+}
+.cast span {
+  color: #fff;
+}
+.playButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  position: relative;
+  top: 150px;
+  right: 50px;
+}
+.primary-btn {
+  padding: 8px;
+  background-color: #e50813;
+  color: #fff;
+  border-radius: 8px;
+}
+.primary-btn i {
+  padding: 5px;
+}
+.playButton img {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+.playButton .img {
+  position: relative;
+  padding-right: 15px;
+}
+.playButton button {
+  background: none;
+  display: flex;
+  align-items: center;
+  border: none;
+  color: #fff;
+}
+.playButton a {
+  text-decoration: none;
+}
+.change {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: #e50813;
+}
+.playButton:hover .change {
+  opacity: 1;
+}
+.playButton:hover i {
+  color: #e50813;
+  text-decoration: none;
+}
+.margin {
+  margin-top: 50%;
+}
+.row {
+  width: 60%;
+}
+p {
+  line-height: 30px;
+}

@@ -1,0 +1,31 @@
+.thumbs {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+}
+
+.thumbsContainer {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.thumbs img {
+  margin: 2px;
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+  z-index: 99;
+}

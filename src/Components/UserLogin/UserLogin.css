@@ -1,0 +1,30 @@
+.login {
+  background-image: url("../Latest/img/LatestBackground.png");
+  height: 100vh;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.login-container {
+  margin: auto;
+  display: flex;
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+}
+form {
+  width: 40vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+.form-btn {
+  background-color: red;
+  border: none;
+}
+.form-btn:hover {
+  background-color: rgb(80, 1, 1);
+  border: none;
+}
