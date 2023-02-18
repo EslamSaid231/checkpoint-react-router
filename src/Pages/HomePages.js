@@ -1,11 +1,11 @@
 import React from "react";
 import Home from "../Components/Home/Home";
 
-const HomePages = () => {
+const HomePages = ({ searching }) => {
   return (
     <>
       <div className="HomePage">
-        <Home />
+        <Home Search={searching} />
       </div>
     </>
   );

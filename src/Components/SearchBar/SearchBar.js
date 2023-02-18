@@ -1,13 +1,13 @@
 import React from "react";
 
 const SearchBar = ({ SearchChange }) => {
-  const handleInput = (e) => {
+  const handleChange = (e) => {
     SearchChange(e.target.value);
-    console.log(e.target.value);
+    console.log(SearchChange);
   };
   return (
     <div>
-      <input type="text" onChange={handleInput} />
+      <input type="text" onChange={handleChange} />
     </div>
   );
 };

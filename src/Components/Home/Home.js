@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { homeData } from "../../dummyData";
 import HomeCard from "./HomeCard";
@@ -26,7 +26,7 @@ const SmaplePrevArrow = (props) => {
     </div>
   );
 };
-const Home = () => {
+const Home = ({ Search }) => {
   var settings = {
     dots: false,
     infinite: true,
@@ -36,12 +36,30 @@ const Home = () => {
     nextArrow: <SmapleNextArrow />,
     prevArrow: <SmaplePrevArrow />,
   };
+  const [filteredMovies, setFilteredMovies] = useState([]);
 
+  useEffect(() => {
+    let tempArray = [];
+
+    if (Search.length > 0) {
+      tempArray = [
+        ...homeData.filter((Movie) =>
+          Movie.name.toLowerCase().includes(Search.toLowerCase())
+        ),
+      ];
+      console.log(tempArray);
+    }
+    if (tempArray.length) {
+      setFilteredMovies(tempArray);
+    } else {
+      setFilteredMovies(homeData);
+    }
+  }, [Search]);
   return (
     <div className="home">
       <div className="homeContainer">
         <Slider {...settings}>
-          {homeData.map((Movie) => (
+          {filteredMovies.map((Movie) => (
             <HomeCard key={Movie.id} item={Movie} />
           ))}
         </Slider>

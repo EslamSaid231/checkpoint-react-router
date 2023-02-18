@@ -1,21 +1,10 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
-import HomePages from "./Pages/HomePages";
-import TrendingPage from "./Pages/TrendingPage";
-import LatestPage from "./Pages/LatestPage";
-import UserLogin from "./Components/UserLogin/UserLogin";
+import Container from "./Container/Container";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePages />} />
-        <Route path=":id" element={<TrendingPage />} />
-        <Route path="latest" element={<LatestPage />} />
-        <Route path="user" element={<UserLogin />} />
-      </Routes>
+      <Container />
     </div>
   );
 }
