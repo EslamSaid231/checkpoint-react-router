@@ -34,9 +34,6 @@ const LatestCard = ({
                 <i className="fa fa-star-half"></i>
               </div>
               <label>
-                Rating: <span>{rating} GP</span>
-              </label>
-              <label>
                 Time: <span>{time}</span>
               </label>
             </div>

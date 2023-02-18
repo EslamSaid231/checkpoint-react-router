@@ -1,0 +1,90 @@
+.container-style {
+  position: relative;
+  height: 100vh;
+}
+.descriptionl2 {
+  width: 600px;
+  position: absolute;
+  z-index: 999;
+  color: white;
+  top: 15%;
+  padding-left: 100px;
+  height: 600px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.01) 100%
+  );
+}
+.descriptionl2 h1 {
+  font-size: 80px;
+  font-weight: 800;
+  background-image: url(../../../public/texure.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: text 0.5s ease;
+}
+.descriptionl2 p {
+  font-size: 22px;
+}
+.carousel-Container {
+  width: fit-content;
+  height: 70vh;
+  position: absolute;
+  bottom: 0;
+}
+.carousel {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2)
+  );
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  width: 100vw;
+  height: 30vh;
+  z-index: 999;
+  align-items: center;
+}
+.bgimgs {
+  transition: background-image 0.5s ease-out;
+}
+.thumbimg-tag {
+  align-items: center;
+}
+.thumbImg {
+  position: relative;
+  display: block;
+  height: 26vh;
+  width: 18vw;
+  margin: 8px;
+  border: 2px solid black;
+  border-radius: 15px;
+  transition: 0.2s all ease-in;
+}
+.thumbImg:hover {
+  border-left: 4px solid red;
+
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.pl2 {
+  position: absolute;
+  top: 40%;
+}
+.row2 {
+  margin-left: 20px;
+}
+.thumbTag {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  color: aliceblue;
+  margin: auto;
+  z-index: 999;
+}

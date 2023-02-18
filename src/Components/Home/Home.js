@@ -36,6 +36,7 @@ const Home = () => {
     nextArrow: <SmapleNextArrow />,
     prevArrow: <SmaplePrevArrow />,
   };
+
   return (
     <div className="home">
       <div className="homeContainer">

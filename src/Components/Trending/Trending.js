@@ -6,6 +6,7 @@ import "./Trending.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TrendingCard from "./TrendingCard";
+import { useParams } from "react-router-dom";
 
 const SmapleNextArrow = (props) => {
   const { onClick } = props;
@@ -28,6 +29,7 @@ const SmaplePrevArrow = (props) => {
   );
 };
 const Trending = () => {
+  const { id } = useParams();
   var settings = {
     dots: false,
     infinite: true,

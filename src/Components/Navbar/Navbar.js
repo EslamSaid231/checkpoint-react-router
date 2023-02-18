@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../Assets/images/logo.png";
-const Navbar = () => {
+import SearchBar from "../SearchBar/SearchBar";
+const Navbar = ({ onQuery }) => {
   const [Mobile, setMobile] = useState(false);
   const [user, setUser] = useState(false);
 
@@ -49,3 +50,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+/*<SearchBar SearchChange={onQuery} />*/
