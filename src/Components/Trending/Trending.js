@@ -38,6 +38,15 @@ const Trending = () => {
     slidesToScroll: 1,
     nextArrow: <SmapleNextArrow />,
     prevArrow: <SmaplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    ],
   };
   return (
     <div className="home">

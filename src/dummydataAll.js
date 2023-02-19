@@ -1,4 +1,4 @@
-export const homeData = [
+export const homeDataAll = [
   {
     id: 1,
     name: "Sand Dust",
@@ -51,75 +51,49 @@ export const homeData = [
     video: "../video/video4.mp4",
     date: "12-Aug-2015",
   },
-];
-export const upcome = [
+
   {
-    id: 1,
+    id: 5,
     cover: "../images/upcome/u1.jpg",
     name: "My office Boss",
     time: "2hr : 38mins",
   },
+
   {
-    id: 2,
-    cover: "../images/upcome/u2.jpg",
-    name: "Shadow",
-    time: "2hr : 38mins",
-  },
-  {
-    id: 3,
+    id: 7,
     cover: "../images/upcome/u3.jpg",
     name: "Another Danger",
     time: "2hr : 38mins",
   },
   {
-    id: 4,
+    id: 8,
     cover: "../images/upcome/u4.jpg",
     name: "One Man Army",
     time: "2hr : 38mins",
   },
+
   {
-    id: 5,
-    cover: "../images/upcome/u5.jpg",
-    name: "Jumbo Queen",
-    time: "2hr : 38mins",
-  },
-];
-export const latest = [
-  {
-    id: 1,
+    id: 10,
     cover: "../images/upcome/u6.png",
     name: "King of Jungle",
     time: "2hr : 38mins",
   },
   {
-    id: 2,
+    id: 11,
     cover: "../images/upcome/u7.jpg",
     name: "The illusion",
     time: "2hr : 38mins",
   },
+
   {
-    id: 3,
-    cover: "../images/upcome/u1.jpg",
-    name: "My Office Boss",
-    time: "2hr : 38mins",
-  },
-  {
-    id: 4,
-    cover: "../images/upcome/u5.jpg",
-    name: "Jumbo Queen",
-    time: "2hr : 38mins",
-  },
-  {
-    id: 5,
+    id: 14,
     cover: "../images/upcome/u4.jpg",
     name: "Latest Three",
     time: "2hr : 38mins",
   },
-];
 
-export const trending = [
   {
-    id: 1,
+    id: 15,
     name: "The Dinosaur",
     rating: 4.7,
     time: "2hr : 22mins",
@@ -131,7 +105,7 @@ export const trending = [
     date: "20-Jan-1997",
   },
   {
-    id: 2,
+    id: 16,
     name: "The Great Emperor",
     rating: 4.6,
     time: "2hr : 22mins",
@@ -143,7 +117,7 @@ export const trending = [
     date: "10-JUL-2021",
   },
   {
-    id: 3,
+    id: 17,
     name: "Jumbo Queen",
     rating: 4.8,
     time: "2hr : 22mins",
@@ -153,37 +127,5 @@ export const trending = [
     tags: "Adventures,Action ",
     cover: "../images/img/slide3.jpg",
     date: "20-FEB-2010",
-  },
-];
-export const recommended = [
-  {
-    id: 4,
-    cover: "../images/rec/rec1.jpg",
-    name: "One Man Army",
-    time: "2hr : 38mins",
-  },
-  {
-    id: 5,
-    cover: "../images/rec/rec2.jpg",
-    name: "Jumbo Queen",
-    time: "2hr : 38mins",
-  },
-  {
-    id: 1,
-    cover: "../images/rec/rec3.jpg",
-    name: "Zombie Island",
-    time: "2hr : 38mins",
-  },
-  {
-    id: 2,
-    cover: "../images/rec/rec4.jpg",
-    name: "Shadowe",
-    time: "2hr : 38mins",
-  },
-  {
-    id: 3,
-    cover: "../images/upcome/u3.jpg",
-    name: "Another Danger",
-    time: "2hr : 38mins",
   },
 ];

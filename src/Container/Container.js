@@ -6,6 +6,7 @@ import TrendingPage from "../Pages/TrendingPage";
 import LatestPage from "../Pages/LatestPage";
 import UserLogin from "../Components/UserLogin/UserLogin";
 import { useState } from "react";
+import SearchComponent from "../Components/SearchBar/SearchComponent";
 
 function Container() {
   const [query, setQuery] = useState("");
@@ -18,6 +19,7 @@ function Container() {
         <Route path=":id" element={<TrendingPage />} />
         <Route path="latest" element={<LatestPage />} />
         <Route path="user" element={<UserLogin />} />
+        <Route path="Pages" element={<SearchComponent />} />
       </Routes>
     </div>
   );

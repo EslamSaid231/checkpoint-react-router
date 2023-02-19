@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../Assets/images/logo.png";
-import SearchBar from "../SearchBar/SearchBar";
+import SearchComponent from "../SearchBar/SearchComponent";
 const Navbar = ({ onQuery }) => {
   const [Mobile, setMobile] = useState(false);
   const [user, setUser] = useState(false);
+  const [searchPanel, setSearchPanel] = useState(false);
+  const [query, setQuery] = useState("");
 
   return (
     <>
@@ -24,7 +26,15 @@ const Navbar = ({ onQuery }) => {
           </div>
         </div>
         <div className="usercontrols">
-          <i className="fa fa-search"></i>
+          <i
+            className="fa fa-search"
+            onClick={() => {
+              setSearchPanel(!searchPanel);
+            }}
+          ></i>
+          <div className={searchPanel ? "Searchpanel" : "hideSearch"}>
+            <SearchComponent SearchChange={setQuery} />
+          </div>
           <i
             className="fa fa-user"
             onClick={() => {
